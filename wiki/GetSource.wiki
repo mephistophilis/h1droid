@@ -2,13 +2,13 @@
 =Build Android from source=
 =Building Odin=
 
-First, clone the Odin git repository
-git clone git://h1.pargon.nl/srv/git-h1/odin.git
+First, clone the Odin git repository.
 Compile Odin (remember, use this tool at your own risk, although there are no known issues or bricking incidents)
 
 {{{
-cd odin
-make brick
+$ git clone git://h1.pargon.nl/srv/git-h1/odin.git
+$ cd odin
+$ make brick
 }}}
 
 ==ARM Cross Compiler==
