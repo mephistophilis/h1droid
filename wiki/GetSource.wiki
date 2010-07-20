@@ -1,47 +1,66 @@
 #labels Featured,Phase-Implementation
-ARM Cross Compiler
+=Build Android from source=
+=Building Odin=
+
+First, clone the Odin git repository
+git clone git://h1.pargon.nl/srv/git-h1/odin.git
+Compile Odin (remember, use this tool at your own risk, although there are no known issues or bricking incidents)
+
+{{{
+cd odin
+make brick
+}}}
+
+==ARM Cross Compiler==
 
 CodeSourcery ARM Compiler should be used for building different kernel distribution and software releases on OMAP platforms. Visit www.codesourcery.com for more info.
 Note: For L24x, L27x kernel builds, Codesourcery tool chain 2009-q1 release should be used. Quick Link - CodeSourcery G++ Lite 2009q1-203 for ARM GNU/Linux
 Steps
 Download .tar from above link and untar to a host pc directory.
 Add Compiler directory to PATH, and cross compiler prefix before build
+
+{{{
 export PATH=/<toolchain_folder>/bin:$PATH
 export CROSS_COMPILE=arm-none-linux-gnueabi-
+export ARCH=arm
+}}}
 
-Compiling Odin
+=Building Bootloader=
 
-First, clone the Odin git repository
-git clone git://h1.pargon.nl/srv/git-h1/odin.git
-Compile Odin (remember, use this tool at your own risk, although there are no known issues or bricking incidents)
-cd odin
-make brick
-Partitioning
-
-Partition your SD card as you see fit, but make sure the first partition has plenty of space (> 200 MB) then format it ext3 and mount it (I'll asume it's mounted at /mnt/sd).
-
-Building Bootloader
-
+{{{
 $ git clone git://h1.pargon.nl/srv/git-h1/u-boot.git
 $ cd u-boot
 $ git checkout nowplus
 $ make distclean
-$ make CROSS_COMPILE=arm-none-linux-gnueabi- omap3630zoom3_config
-$ make CROSS_COMPILE=arm-none-linux-gnueabi-
+$ make nowplus_config
+$ make
+}}}
 
-Building Kernel
+=Building Kernel=
 
+{{{
 $ cd $MYDROID/kernel/android-2.6.29
-$ make CROSS_COMPILE=<path to compiler>/arm-none-linux-gnueabi- distclean
-$ make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- omap_nowplus_defconfig
-$ make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage
+$ make distclean
+$ make omap_nowplus_defconfig
+$ make uImage
+}}}
 
 Building boot.bin
 Get makeboot from Download section
-Modify to your path of uImage and uboot
+Modify uImage and uboot to your path
+{{{
+$ ./makeboot
+}}}
 
-Building Android
+=Building Android=
 
-Booting
+=Partitioning=
+
+Partition your SD card as you see fit, but make sure the first partition has plenty of space (> 200 MB) then format it ext3 and mount it (I'll asume it's mounted at /mnt/sd).
+
+=Booting=
 Put your device into download mode by first turning it off, then power it on whilst holding down both the volume down and camera button. Upload and run your bootloader/kernel image
+
+{{{
 ./odin boot.bin
+}}}
