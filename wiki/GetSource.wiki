@@ -41,7 +41,8 @@ $ make
 ==Building Kernel==
 
 {{{
-$ cd $MYDROID/kernel/android-2.6.29
+$ git clone git://github.com/mephistophilis/I8320Kernel.git
+$ cd I8320Kernel
 $ make distclean
 $ make omap_nowplus_defconfig
 $ make uImage
