@@ -43,8 +43,8 @@ $ make
 {{{
 $ git clone git://github.com/mephistophilis/I8320Kernel.git
 $ cd I8320Kernel
-$ make distclean
-$ make omap_nowplus_defconfig
+$ git checkout i8320
+$ cp arch/arm/configs/omap_nowplus_defconfig .config
 $ make uImage
 }}}
 
