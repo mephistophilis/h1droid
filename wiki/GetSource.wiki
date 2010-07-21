@@ -16,7 +16,7 @@ $ make brick
 ==ARM Cross Compiler==
 
 CodeSourcery ARM Compiler should be used for building different kernel distribution and software releases on OMAP platforms. Visit www.codesourcery.com for more info.
-Note: For L24x, L27x kernel builds, Codesourcery tool chain 2009-q1 release should be used. Quick Link - CodeSourcery G++ Lite 2009q1-203 for ARM GNU/Linux
+Quick Link - CodeSourcery G++ Lite 2009q1-203 for ARM GNU/Linux
 Steps
 Download .tar from above link and untar to a host pc directory.
 Add Compiler directory to PATH, and cross compiler prefix before build
