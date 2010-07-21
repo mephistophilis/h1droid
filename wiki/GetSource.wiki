@@ -1,6 +1,6 @@
 #labels Featured,Phase-Implementation,Phase-Requirements
 #sidebar Sidebar
-<wiki:toc max_depth="1" />
+
 =Build Android from source=
 ==Building Odin==
 
