@@ -49,9 +49,9 @@ $ make uImage
 
 ==Building boot.bin==
 Get makeboot from Download section
-Modify uImage and uboot to your path
+
 {{{
-$ ./makeboot
+$ ./makeboot ./u-boot/u-boot.bin ./I8320Kernel/arch/arm/boot/uImage
 }}}
 
 ==Building Android==
