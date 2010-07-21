@@ -33,8 +33,7 @@ export ARCH=arm
 $ git clone git://h1.pargon.nl/srv/git-h1/u-boot.git
 $ cd u-boot
 $ git checkout nowplus
-$ make distclean
-$ make nowplus_config
+$ make omap3_nowplus_config
 $ make
 }}}
 
