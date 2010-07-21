@@ -48,10 +48,11 @@ $ make uImage
 }}}
 
 ==Building boot.bin==
-Get makeboot from Download section
+Get [http://h1droid.googlecode.com/files/makeboot.sh  makeboot] from Download section
 
 {{{
-$ ./makeboot ./u-boot/u-boot.bin ./I8320Kernel/arch/arm/boot/uImage
+$ chmod +x makeboot.sh
+$ ./makeboot.sh ./u-boot/u-boot.bin ./I8320Kernel/arch/arm/boot/uImage
 }}}
 
 ==Building Android==
