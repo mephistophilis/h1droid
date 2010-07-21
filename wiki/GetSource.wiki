@@ -37,6 +37,12 @@ $ make omap3_nowplus_config
 $ make
 }}}
 
+export mkimage's path
+
+{{{
+export PATH=/<uboot_folder>/tools:$PATH
+}}}
+
 ==Building Kernel==
 
 {{{
