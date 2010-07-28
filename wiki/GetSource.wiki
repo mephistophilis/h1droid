@@ -33,6 +33,24 @@ $ export ARCH=arm
 $ git clone git://h1.pargon.nl/srv/git-h1/u-boot.git
 $ cd u-boot
 $ git checkout nowplus
+}}}
+
+open u-boot/include/configs/omap3_nowplus.h ,change CONFIG_EXTRA_ENV_SETTINGS and CONFIG_BOOTCOMMAND
+{{{
+#define CONFIG_EXTRA_ENV_SETTINGS \
+	"loadaddr=0x82000000\0" \
+	"console=ttyS2,115200n8\0" \
+	"usbtty=cdc_acm\0"\
+	"stdout=usbtty\0" \
+	"stdin=usbtty\0" \
+	"stderr=usbtty\0" \
+	"bootargs=root=/dev/mmcblk0p1 rw init=/init rootdelay=1 rootfstype=ext3 rootwait debug\0" \
+#define CONFIG_BOOTCOMMAND \
+		"bootm 0x86C30000"
+}}}
+
+then compile.
+{{{
 $ make omap3_nowplus_config
 $ make
 }}}
