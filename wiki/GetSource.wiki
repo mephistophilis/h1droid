@@ -82,6 +82,36 @@ $ ./makeboot.sh ./u-boot/u-boot.bin ./I8320Kernel/arch/arm/boot/uImage
 
 ==Building Android==
 
+{{{
+$ export ANDROID=/home/mephisto/h1droid
+$ mkdir -p $ANDROID
+$ cd $ANDROID
+$ repo init -u git://android.git.kernel.org/platform/manifest.git -b android-2.2_r1.1
+$ repo sync
+}}}
+
+{{{
+$ cd $ANDROID
+$ source build/envsetup.sh
+$ lunch i8320board-eng
+$ make -j3
+}}}
+
+{{{
+$ cd $ANDROID
+$ git clone git://gitorious.org/rowboat/ti_android_sgx_sdk.git TI_Android_SGX_SDK
+$ cd TI_Android_SGX_SDK
+$ ./OMAP35x_Android_Graphics_SDK_setuplinux_3_01_00_03.bin
+}}}
+
+
+{{{
+$ cd $ANDROID/TI_Android_SGX_SDK
+$ make
+$ make install OMAPES=3.x
+}}}
+
+
 ==Partitioning==
 
 Partition your SD card as you see fit, but make sure the first partition has plenty of space (> 200 MB) then format it ext3 and mount it (I'll asume it's mounted at /mnt/sd).
