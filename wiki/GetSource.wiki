@@ -81,7 +81,7 @@ $ ./makeboot.sh ./u-boot/u-boot.bin ./I8320Kernel/arch/arm/boot/uImage
 }}}
 
 ==Building Android==
-
+update soon....
 {{{
 $ export ANDROID=/home/mephisto/h1droid
 $ mkdir -p $ANDROID
