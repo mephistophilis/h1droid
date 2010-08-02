@@ -99,11 +99,23 @@ $ make -j3
 
 {{{
 $ cd $ANDROID
+$ $ANDROID/vendor/sola/omap3/image/beagleboard-image.sh
+}}}
+
+{{{
+$ cd $ANDROID
 $ git clone git://gitorious.org/rowboat/ti_android_sgx_sdk.git TI_Android_SGX_SDK
 $ cd TI_Android_SGX_SDK
 $ ./OMAP35x_Android_Graphics_SDK_setuplinux_3_01_00_03.bin
 }}}
 
+{{{
+HOME=$(ANDROID)
+GRAPHICS_INSTALL_DIR=$(ANDROID)/TI_Android_SGX_SDK
+ANDROID_ROOT=$(ANDROID)/vendor/sola/omap3/image/i8320board/android
+CSTOOL_DIR=$(ANDROID)/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/
+KERNEL_INSTALL_DIR=$(ANDROID)/../I8320Kernel
+}}}
 
 {{{
 $ cd $ANDROID/TI_Android_SGX_SDK
