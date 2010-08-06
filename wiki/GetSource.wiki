@@ -65,8 +65,8 @@ $ export PATH=/<uboot_folder>/tools:$PATH
 ==Building Kernel==
 
 {{{
-$ git clone git://github.com/mephistophilis/I8320Kernel.git
-$ cd I8320Kernel
+$ git clone git://gitorious.org/h1droid/i8320kernel.git
+$ cd i8320kernel
 $ git checkout i8320
 $ cp arch/arm/configs/omap_nowplus_defconfig .config
 $ make uImage
@@ -77,7 +77,7 @@ Get [http://h1droid.googlecode.com/files/makeboot.sh  makeboot] from Download se
 
 {{{
 $ chmod +x makeboot.sh
-$ ./makeboot.sh ./u-boot/u-boot.bin ./I8320Kernel/arch/arm/boot/uImage
+$ ./makeboot.sh ./u-boot/u-boot.bin ./i8320kernel/arch/arm/boot/uImage
 }}}
 
 ==Building Android==
@@ -114,7 +114,7 @@ HOME=$(ANDROID)
 GRAPHICS_INSTALL_DIR=$(ANDROID)/TI_Android_SGX_SDK
 ANDROID_ROOT=$(ANDROID)/vendor/sola/omap3/image/i8320board/android
 CSTOOL_DIR=$(ANDROID)/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/
-KERNEL_INSTALL_DIR=$(ANDROID)/../I8320Kernel
+KERNEL_INSTALL_DIR=$(ANDROID)/../i8320kernel
 }}}
 
 {{{
