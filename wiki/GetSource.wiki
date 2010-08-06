@@ -99,7 +99,7 @@ $ make -j3
 
 {{{
 $ cd $ANDROID
-$ $ANDROID/vendor/sola/omap3/image/beagleboard-image.sh
+$ $ANDROID/vendor/sola/omap3/image/i8320-image.sh
 }}}
 
 {{{
