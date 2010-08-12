@@ -80,7 +80,6 @@ $ ./makeboot.sh ./u-boot/u-boot.bin ./i8320kernel/arch/arm/boot/uImage
 }}}
 
 ==Building Android==
-update soon....
 {{{
 $ export ANDROID=/home/mephisto/h1droid
 $ mkdir -p $ANDROID
@@ -89,8 +88,21 @@ $ repo init -u git://android.git.kernel.org/platform/manifest.git -b android-2.2
 $ repo sync
 }}}
 
+
+{{{
+$ vi .repo/local_manifest.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" revision="froyo"/>
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="froyo"/>
+  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" revision="froyo"/>
+</manifest>
+}}}
+
 {{{
 $ cd $ANDROID
+$ git clone git://gitorious.org/h1droid/vendor
 $ source build/envsetup.sh
 $ lunch i8320board-eng
 $ make -j3
