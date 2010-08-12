@@ -44,9 +44,12 @@ I8320Kernel/include/linux/input.h
 
 }}}
 
-For power key, it's a GPIO key, we already defined keymap and keyfunction in board-nowplus.c
-For active gpio key,we need config it.
+For power key, it's a GPIO key, we already defined keymap and keyfunction in board-nowplus.c.
+But we need active gpio key,and config it.
 Modify .config,or do make menuconfig:
+
 {{{
+
 CONFIG_KEYBOARD_GPIO=y
+
 }}}
