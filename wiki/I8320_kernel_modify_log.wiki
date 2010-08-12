@@ -2,12 +2,12 @@
 arch/arm/mach-omap2/board-nowplus.c 
 static int board_keymap[] = {
 #if 0
-KEY(0, 0, KEY_FRONT),
-KEY(1, 0, KEY_SEARCH),
-KEY(2, 0, KEY_CAMERA_FOCUS),
-KEY(0, 1, KEY_PHONE),
-KEY(2, 1, KEY_CAMERA),
-KEY(0, 2, KEY_EXIT),
+ KEY(0, 0, KEY_FRONT),
+ KEY(1, 0, KEY_SEARCH),
+ KEY(2, 0, KEY_CAMERA_FOCUS),
+ KEY(0, 1, KEY_PHONE),
+ KEY(2, 1, KEY_CAMERA),
+ KEY(0, 2, KEY_EXIT),
 KEY(1, 2, KEY_VOLUMEUP),
 KEY(2, 2, KEY_VOLUMEDOWN),
 #elif 1 //macroliu
