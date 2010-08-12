@@ -32,11 +32,11 @@ KEY(2, 2, KEY_VOLUMEDOWN),
 
 }}}
 
-I8320Kernel/include/linux/input.h
+include/linux/input.h
 
 {{{
 
-#if 1 //macroliu
+ #if 1 //macroliu
 #define KEY_CALL        231
 #else
 #define KEY_SEND                231        /* AC Send */
