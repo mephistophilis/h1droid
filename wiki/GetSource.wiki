@@ -81,15 +81,6 @@ $ ./makeboot.sh ./u-boot/u-boot.bin ./i8320kernel/arch/arm/boot/uImage
 
 ==Building Android==
 {{{
-$ export ANDROID=/home/mephisto/h1droid
-$ mkdir -p $ANDROID
-$ cd $ANDROID
-$ repo init -u git://android.git.kernel.org/platform/manifest.git -b android-2.2_r1.1
-$ repo sync
-}}}
-
-
-{{{
 $ vi .repo/local_manifest.xml
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -98,6 +89,14 @@ $ vi .repo/local_manifest.xml
   <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="froyo"/>
   <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" revision="froyo"/>
 </manifest>
+}}}
+
+{{{
+$ export ANDROID=/home/mephisto/h1droid
+$ mkdir -p $ANDROID
+$ cd $ANDROID
+$ repo init -u git://android.git.kernel.org/platform/manifest.git -b android-2.2_r1.1
+$ repo sync
 }}}
 
 {{{
