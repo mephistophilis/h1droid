@@ -1,5 +1,5 @@
 #labels Featured
-#Support this project!
+*Support this project!*
 
 If you use this project and would like to support it, please donate.
 
