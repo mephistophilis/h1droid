@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-#labels Featured
+#labels Featured,Phase-Deploy
 
 = Need a Linux=
 
