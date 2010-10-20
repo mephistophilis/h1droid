@@ -125,7 +125,7 @@ $ make install OMAPES=3.x
 
 ==Partitioning==
 
-Create to partition on sdcard. First one is vfat. second is ext3 for save rootfs.
+Create to partition on sdcard. First one is vfat. second is ext3 for save rootfs(>200MB).
 then copy all files from $(ANDROID)/device/samsung/i8320/android to second partition.
 
 ==Booting==
