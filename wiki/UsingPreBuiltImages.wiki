@@ -1,5 +1,4 @@
 #labels Featured,Phase-Deploy
-
 = Need a Linux=
 
 = Download =
@@ -18,3 +17,5 @@ Put your device into download mode by first turning it off, then power it on whi
 {{{
 $ ./odin boot.bin
 }}}
+
+===Use At Your Own Risk===
