@@ -1,8 +1,12 @@
 #labels Featured
 *Support this project!*
 
-If you use this project and would like to support it, please donate.
+Donations are gratefully received and never required.
 
-Paypal's donation is not supported in china.
+<a href="http://www.moneybookers.com/" target="_blank"><img style="border-width: 1px; border-color: #8B8583;" src="http://www.moneybookers.com/images/logos/additional_logos/orange_donate_with.gif" border="0" /></a>
 
-any suggestions?
+First, click the above button to go to the Moneybookers website. When you get there, follow these steps:
+  # Register for an account if you don't already have one.
+  # Upload some funds to your account (Moneybookers offers many, many ways to do this).
+  # Click on "Send Money" in the top left corner of the page
+  # Fill out the form. The email address to which you should donate is: *mephistophilis@gmail.com*.
