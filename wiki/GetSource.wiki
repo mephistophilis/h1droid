@@ -108,6 +108,7 @@ $ cd TI_Android_SGX_SDK
 $ ./OMAP35x_Android_Graphics_SDK_setuplinux_3_01_00_03.bin
 }}}
 
+Edit Rules.make in the install directory
 {{{
 HOME=$(ANDROID)
 GRAPHICS_INSTALL_DIR=$(ANDROID)/TI_Android_SGX_SDK
