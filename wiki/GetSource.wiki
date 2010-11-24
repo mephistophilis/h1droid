@@ -91,9 +91,15 @@ $ repo sync
 
 {{{
 $ cd $ANDROID
+}}}
+{{{
 $ source build/envsetup.sh
 $ lunch i8320-eng
 $ make -j2
+}}}
+or
+{{{
+make -j2 PRODUCT-i8320-eng
 }}}
 
 {{{
