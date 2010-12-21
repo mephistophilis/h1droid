@@ -1,8 +1,8 @@
 #labels Featured,Phase-Implementation,Phase-Requirements
 #sidebar Sidebar
 
-=Build Android from source=
-==Building Odin==
+=从源程序开始编译Android=
+==编译Odin==
 
 First, clone the Odin git repository.
 Compile Odin (remember, use this tool at your own risk, although there are no known issues or bricking incidents)
