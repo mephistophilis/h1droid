@@ -66,7 +66,7 @@ $ export PATH=/<uboot_folder>/tools:$PATH
 {{{
 $ git clone git://gitorious.org/h1droid/i8320kernel.git
 $ cd i8320kernel
-$ git checkout i8320
+$ git checkout mergei8520
 $ cp arch/arm/configs/omap_nowplus_defconfig .config
 $ make uImage
 }}}
