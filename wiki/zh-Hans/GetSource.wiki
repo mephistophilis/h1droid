@@ -1,8 +1,8 @@
-#labels Featured,Phase-Implementation,Phase-Requirements
+ï»¿#labels Featured,Phase-Implementation,Phase-Requirements
 #sidebar Sidebar
 
-=´ÓÔ´³ÌĞò¿ªÊ¼±àÒëAndroid=
-==±àÒëOdin==
+=ä»æºç¨‹åºå¼€å§‹ç¼–è¯‘Android=
+==ç¼–è¯‘Odin==
 
 First, clone the Odin git repository.
 Compile Odin (remember, use this tool at your own risk, although there are no known issues or bricking incidents)
