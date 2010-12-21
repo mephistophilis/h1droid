@@ -1,20 +1,20 @@
-#labels Featured,Phase-Deploy
+﻿#labels Featured,Phase-Deploy
 
-= ���� =
-����ҳ��Downloadҳ������ boot.tar.bz2, rootfs.tar.bz2 ��һ���ʺ���İ汾��odin������лpuppywang�����ڲ���ҪLinuxҲ�������ں��ˡ���
+= 下载 =
+从首页的Download页面下载 boot.tar.bz2, rootfs.tar.bz2 和一个适合你的版本的odin。（感谢puppywang，现在不需要Linux也能启动内核了。）
 
-==����==
-��SD�ֳ����������� ��һ��������fat32���ڶ���������ext3��
-Ȼ��ӽ�ѹrootfs.tar.bz2���ڶ���������
+==分区==
+把SD分成两个分区， 第一个分区是fat32，第二个分区是ext3。
+然后从解压rootfs.tar.bz2到第二个分区。
 
-==����==
-�ػ���Ȼ��ͬʱ��ס����С�������͡����ࡱ�İ�ť��Ȼ����ͬʱ��ס��Դ�����ֻ����������ģʽ��
-���ʱ��������������
+==启动==
+关机，然后同时按住“减小音量”和“照相”的按钮，然后再同时按住电源键。手机会进入下载模式。
+这个时候运行下面的命令。
 
 {{{
 $ ./odin boot.bin
 }}}
 
-===����===
-��Ȼ���������ķ�ʽ�����ᰲװ�κζ��������ֻ���nand��movinand�ϡ�Ҳ�����ƻ�ԭ�е�ϵͳ��
-����ˢ���з��ա�������� �����֪���Լ�����ʲô�벻Ҫ���ԡ�
+===风险===
+虽然这种启动的方式，不会安装任何东西到你手机的nand和movinand上。也不会破坏原有的系统。
+但是刷机有风险。请谨慎。 如果不知道自己在做什么请不要尝试。
