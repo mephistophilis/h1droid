@@ -1,0 +1,12 @@
+
+```
+Touch Screen: Synaptics t1021a
+Radio: Samsung SWB-T30
+ACC: KXSD9
+DPRAM: Samsung MD512256B
+Onenand: Samsung KBN00900HM-A439 512MB
+MLC NAND: Samsung KLMAG8DEDD 16GB
+RAM: 256MB
+TWL5030B
+MAX 8674
+```
